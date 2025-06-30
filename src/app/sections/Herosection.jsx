@@ -4,7 +4,7 @@ import Herotext from '../components/Herotext';
 
 function Herosection() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
