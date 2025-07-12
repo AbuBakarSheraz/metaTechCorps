@@ -105,8 +105,8 @@ function Herotext() {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 mb-16">
-          <button className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 group">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button className="bg-gray-600  text-white px-8 py-4 my-20 rounded-full transition-all duration-300 flex items-center justify-center gap-2 group">
             Get In Touch
           </button>
           {/* <button className="bg-[#c71539] hover:bg-[#a01230] text-white px-6 py-4 rounded-full transition-all duration-300 flex items-center justify-center group">

@@ -11,7 +11,7 @@ function Slider() {
   ];
 
   return (
-    <div className="relative overflow-hidden  bg-[#c71539] py-6  ">
+    <div className="relative overflow-hidden  bg-[#c71539] py-10  ">
       <style jsx>{`
         @keyframes scroll {
           0% {
@@ -22,7 +22,7 @@ function Slider() {
           }
         }
         .scroll-animation {
-          animation: scroll 10s linear infinite;
+          animation: scroll 4s linear infinite;
         }
       `}</style>
       

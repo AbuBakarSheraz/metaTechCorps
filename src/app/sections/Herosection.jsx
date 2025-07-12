@@ -11,17 +11,17 @@ function Herosection() {
         loop
         muted
         playsInline
-        className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       >
         <source src="/bgvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Dark overlay for better text readability */}
-      <div className="fixed inset-0 bg-black/40 -z-10"></div>
+      {/* <div className="absolute inset-0 -z-10"></div> */}
 
       {/* Content Container */}
-      <div className="relative z-10 min-h-screen flex flex-col text-white">
+      <div className="relative z-10 flex flex-col text-white">
         <Header />
         <Herotext />
       </div>

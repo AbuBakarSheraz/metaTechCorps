@@ -27,21 +27,22 @@ function Aboutagency() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 relative">
+    <div className="bg-gray-900 relative">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
 
-      <div className="relative z-20 flex flex-col lg:flex-row">
+      <div className="relative z-20 flex flex-col lg:flex-row pt-24">
         {/* Left Section - Sticky */}
-        <div className='lg:sticky lg:top-[-120px] lg:h-screen flex flex-col justify-center flex-1 px-8 lg:px-16 py-8 lg:py-0'>
+        <div className='lg:sticky lg:top-16 self-start px-8 lg:px-16'>
+
           <div className='max-w-2xl'>
             <div className='flex gap-3 font-semibold text-white mb-6'>
-              <FaStarOfLife className='text-[#c71539] mt-1' />
+              <FaStarOfLife className='text-mtc-red mt-1' />
               <p className='tracking-wide'>ABOUT AGENCY</p>
             </div>
 
-            <h1 className='text-3xl md:text-2xl lg:text-4xl xl:text-6xl text-white leading-tight mb-8'>
-              Crafting <strong className='font-bold text-[#c71539]'>unique digital</strong> experiences that elevate your brand
+            <h1 className='text-3xl md:text-2xl lg:text-4xl xl:text-5xl text-white leading-tight mb-8 font-mono'>
+              Crafting <strong className='font-bold text-mtc-red'>unique digital</strong> experiences that elevate your brand
             </h1>
 
             <div className="flex items-center space-x-[-12px]">
@@ -58,7 +59,7 @@ function Aboutagency() {
                 onClick={handleClick}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="bg-[#c71539] hover:bg-[#a01230] w-12 h-12 ml-3 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
+                className="bg-mtc-red hover:bg-[#a01230] w-12 h-12 ml-3 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
               >
                 <FiArrowUpRight
                   className={`text-white text-xl transform transition-transform duration-500 ${isHovered ? "rotate-45 scale-110" : "rotate-0"}`}
@@ -69,18 +70,19 @@ function Aboutagency() {
         </div>
 
         {/* Right Section - Scrollable */}
-        <div className="flex-1 px-8 lg:px-16 py-16 lg:py-32">
-          <div className="relative max-w-2xl">
+        <div className="flex-1 px-8 lg:px-16">
+
+          <div className="relative max-w-3xl">
             {/* Connected vertical line */}
-            <div className="absolute left-3 top-0 h-full w-px bg-gradient-to-b from-[#c71539] via-gray-600 to-gray-800"></div>
+            <div className="absolute left-2 lg:left-[-50px] top-0 h-full w-px bg-mtc-red"></div>
 
             <div className="flex flex-col gap-20">
               {features.map((feature, idx) => (
                 <div key={idx} className="relative flex gap-8 items-start group">
                   {/* Dot with pulse animation */}
-                  <div className="relative top-[68px] md:top-18 ml-[2px] z-10">
-                    <FaRegCircleDot className="text-[#c71539] text-xl transition-all duration-300 group-hover:scale-125 group-hover:text-[#ff1744]" />
-                    <div className="absolute inset-0 rounded-full bg-[#c71539] opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
+                  <div className="relative top-[68px] md:top-18 ml-[-2px] lg:ml-[-60px] z-10">
+                    <FaRegCircleDot className="text-mtc-red text-xl transition-all duration-300 group-hover:scale-125 group-hover:text-[#ff1744]" />
+                    <div className="absolute inset-0 rounded-full bg-mtc-red opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
                   </div>
 
                   {/* Content */}
@@ -88,7 +90,7 @@ function Aboutagency() {
                     {/* <div className="bg-[#c71539] p-1 rounded-lg w-fit transition-all duration-300  group-hover:shadow-lg"> */}
                      <Image src={feature.icon} alt="icon" width={48} height={48} className="h-12 w-12" />
                     {/* </div> */}
-                    <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-white transition-colors duration-300 group-hover:text-[#c71539]">
+                    <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-white transition-colors duration-300 group-hover:text-mtc-red">
                       {feature.title}
                     </h2>
                     <p className="text-gray-300 text-lg leading-relaxed transition-colors duration-300 group-hover:text-gray-200">
