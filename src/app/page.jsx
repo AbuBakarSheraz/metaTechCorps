@@ -12,7 +12,7 @@ export default function Home() {
     <>
     <Herosection />
     <Slider/>
-    <div className="bg-gray-900">
+    <div className="bg-black">
     <Aboutagency />
     <Services />
     <DigitalSuccessComponent />

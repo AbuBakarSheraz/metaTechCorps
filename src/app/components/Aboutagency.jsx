@@ -59,10 +59,10 @@ function Aboutagency() {
                 onClick={handleClick}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="bg-mtc-red hover:bg-[#a01230] w-12 h-12 ml-3 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
+                className="bg-mtc-red hover:bg-[#a01230] w-12 h-12 z-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
               >
                 <FiArrowUpRight
-                  className={`text-white text-xl transform transition-transform duration-500 ${isHovered ? "rotate-45 scale-110" : "rotate-0"}`}
+                  className={`text-white text-xl z-20 transform transition-transform duration-500 ${isHovered ? "rotate-45 scale-110" : "rotate-0"}`}
                 />
               </button>
             </div>
@@ -70,7 +70,7 @@ function Aboutagency() {
         </div>
 
         {/* Right Section - Scrollable */}
-        <div className="flex-1 px-8 lg:px-16">
+        <div className="flex-1 pt-16 px-8 lg:px-16 md:py-1">
 
           <div className="relative max-w-3xl">
             {/* Connected vertical line */}

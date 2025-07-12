@@ -48,7 +48,7 @@ function Services() {
               <FaStarOfLife className='text-mtc-red mt-13' />
               <p className='tracking-wide mt-12'>OUR SERVICES</p>
             </div>
-            <div className='flex flex-col  md:flex-row md:gap-20 mt-4'>
+            <div className='flex flex-col  md:flex-row md:gap-20 mt-6'>
 
             <div>
             <h1 className='text-4xl md:text-4xl lg:text-5xl lg:w-[700px] xl:text-5xl text-white leading-tight'>
@@ -57,7 +57,7 @@ function Services() {
             </div>
 
            <div className=''>
-            <p className='mb-2 lg:w-[70%] '>
+            <p className='my-4 lg:w-[70%] '>
                 Join our creative community to collaborate, innovate, and thrive together We welcome passionate individuals eager to make.
             </p>
 
@@ -86,7 +86,7 @@ function Services() {
            </div>
         </div>
 
-        <div className="flex flex-1 p-14 flex-col md:flex-row gap-8">
+        <div className="flex flex-1 p-8 flex-col md:flex-row gap-8">
           {services.map((service) => (
             <div 
               key={service.id}

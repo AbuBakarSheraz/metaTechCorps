@@ -49,7 +49,7 @@ function Herotext() {
   }, [displayText, isTyping, currentService, services]);
 
   return (
-    <div className="flex-1 flex items-center justify-center px-6 py-8">
+    <div className="flex-1 flex items-center justify-center px-4 py-8">
       {/* Main Content */}
       <div className="w-full mx-auto text-center">
         {/* Main Heading */}
@@ -66,7 +66,7 @@ function Herotext() {
         </div>
 
         {/* Description and Controls */}
-        <div className="flex flex-col lg:flex-row items-center justify-around gap-8 px-12 mt-12">
+        <div className="flex flex-col lg:flex-row items-center justify-around gap-8 px-4 mt-12">
           {/* Play Button with Rotating Text */}
           <div className="relative flex-shrink-0">
             <div className="relative w-32 h-32">
