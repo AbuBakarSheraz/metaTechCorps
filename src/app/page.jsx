@@ -12,11 +12,12 @@ export default function Home() {
     <>
     <Herosection />
     <Slider/>
+    <div className="bg-gray-900">
     <Aboutagency />
     <Services />
     <DigitalSuccessComponent />
     <ChooseUs />
-  
+    </div>  
          
     </>
   );
