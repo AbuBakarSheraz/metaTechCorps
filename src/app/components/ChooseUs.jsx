@@ -4,14 +4,14 @@ import img from '../assets/images/image2.jpg';
 
 export default function WhyChooseSection() {
   return (
-    <div className="min-h-screen bg-black text-white relative overflow-hidden">
+    <div className="min-h-screen  text-white relative overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-96 h-96 border border-gray-700 rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-64 h-64 border border-gray-700 rounded-full"></div>
-        <div className="absolute top-1/3 right-1/3 w-48 h-48 border border-gray-700 rounded-full"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-32 h-32 border border-gray-700 rounded-full"></div>
+       <div className="absolute inset-0 opacity-20">
+         <div className="absolute top-20 left-20 w-72 h-72 bg-mtc-red rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div> 
+        <div className="absolute top-30 right-20 w-32 h-96 bg-mtc-red rounded-full mix-blend-multiply filter blur-xl "></div>
+        <div className="absolute bottom-20 left-40 w-20 h-96 rounded-full bg-mtc-red mix-blend-multiply filter blur-xl "></div>
       </div>
+       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
       <div className="relative z-10  mx-auto px-8 md:px-18 py-16">
         {/* Header Section */}
@@ -20,7 +20,7 @@ export default function WhyChooseSection() {
           <div className="space-y-8">
             <div className="flex items-center gap-3">
               <div className="text-mtc-red text-2xl">✱</div>
-              <span className="text-mtc-red font-semibold text-lg tracking-wider uppercase">
+              <span className=" font-semibold text-lg tracking-wider uppercase">
                 WHY CHOOSE
               </span>
             </div>

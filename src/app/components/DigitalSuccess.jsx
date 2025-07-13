@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function DigitalSuccessComponent() {
   return (
-    <div className="min-h-screen bg-black p-8 md:p-18 flex items-center justify-center">
+    <div className="min-h-screen p-8 md:p-18 flex items-center justify-center">
       <div className="bg-black rounded-3xl p-4 relative overflow-hidden">
         {/* Custom gradient borders with inner radius */}
         <div className="absolute inset-0">

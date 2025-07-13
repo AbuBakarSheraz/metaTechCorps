@@ -27,10 +27,14 @@ function Aboutagency() {
   ];
 
   return (
-    <div className="bg-gray-900 relative">
+    <div className="relative">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-
+       <div className="absolute inset-0 opacity-20">
+         <div className="absolute top-20 left-20 w-72 h-72 bg-mtc-red rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div> 
+        <div className="absolute top-30 right-20 w-32 h-96 bg-mtc-red rounded-full mix-blend-multiply filter blur-xl "></div>
+        <div className="absolute bottom-20 left-40 w-20 h-96 rounded-full bg-mtc-red mix-blend-multiply filter blur-xl "></div>
+      </div>
+       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div className="relative z-20 flex flex-col lg:flex-row pt-24">
         {/* Left Section - Sticky */}
         <div className='lg:sticky lg:top-16 self-start px-8 lg:px-16'>
