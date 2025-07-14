@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FiLinkedin } from "react-icons/fi";
 import { LuInstagram } from "react-icons/lu";
 import { GoDotFill } from "react-icons/go";
 import { TbGridDots } from "react-icons/tb";
@@ -23,7 +23,7 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { Icon: FaXTwitter, href: '#twitter', label: 'Twitter' },
+    { Icon: FiLinkedin, href: 'https://www.linkedin.com/company/metatechcorps/', label: 'Twitter' },
     { Icon: LuInstagram, href: 'https://www.instagram.com/metatechcorps/', label: 'Instagram' },
     { Icon: FaFacebookF, href: 'https://web.facebook.com/metatechcorpsss/?ref=pl_edit_xav_ig_profile_page_web#', label: 'Facebook' }
   ];

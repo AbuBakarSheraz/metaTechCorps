@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { FaStarOfLife, FaRegCircleDot } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from 'next/image';
-import icon1 from '../assets/icons/icon1.png';
-import icon2 from '../assets/icons/icon2.png';
-import icon3 from '../assets/icons/icon3.png';
-import icon4 from '../assets/icons/icon4.png';
+import icon1 from '../assets/icons/icon1.svg';
+import icon2 from '../assets/icons/icon2.svg';
+import icon3 from '../assets/icons/icon3.svg';
+import icon4 from '../assets/icons/icon4.svg';
 
 
 function Aboutagency() {

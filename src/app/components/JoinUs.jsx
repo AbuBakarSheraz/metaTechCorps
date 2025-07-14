@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { ArrowUpRight, Facebook, Linkedin, Instagram } from 'lucide-react';
 
 const JoinUs = () => {
   return (
@@ -57,11 +57,11 @@ const JoinUs = () => {
               <div className="group">
                 <div className="flex items-center space-x-6 p-6 rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-mtc-red transition-all duration-300 hover:transform hover:scale-105">
                   <div className="w-14 h-14 bg-mtc-red rounded-full flex items-center justify-center group-hover:bg-mtc-red transition-colors duration-300">
-                    <Twitter className="w-7 h-7 text-black" />
+                    <Facebook className="w-7 h-7 text-black" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-white mb-1">Follow Us On Twitter</h3>
-                    <p className="text-gray-400">@artistic_official</p>
+                    <h3 className="text-lg font-semibold text-white mb-1">Follow Us On Facebook</h3>
+                    <p className="text-gray-400">@MTC</p>
                   </div>
                   <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-mtc-red transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </div>
