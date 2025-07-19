@@ -1,3 +1,5 @@
+
+// Header.js - Fixed version
 "use client"
 import React, { useState } from 'react';
 import { FaFacebookF } from "react-icons/fa";
@@ -5,6 +7,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { LuInstagram } from "react-icons/lu";
 import { GoDotFill } from "react-icons/go";
 import { TbGridDots } from "react-icons/tb";
+import Link from 'next/link';
 import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
@@ -15,15 +18,14 @@ const Header = () => {
   };
 
   const navigationItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'About Us', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Pages', href: '#pages' },
-    { label: 'Contact Us', href: '#contact' }
+    { label: 'Home', href: '/' },
+    { label: 'About Us', href: '/about-us' },
+    { label: 'Services', href: '/services' },
+    { label: 'Contact Us', href: '/contact-us' }
   ];
 
   const socialLinks = [
-    { Icon: FiLinkedin, href: 'https://www.linkedin.com/company/metatechcorps/', label: 'Twitter' },
+    { Icon: FiLinkedin, href: 'https://www.linkedin.com/company/metatechcorps/', label: 'LinkedIn' },
     { Icon: LuInstagram, href: 'https://www.instagram.com/metatechcorps/', label: 'Instagram' },
     { Icon: FaFacebookF, href: 'https://web.facebook.com/metatechcorpsss/?ref=pl_edit_xav_ig_profile_page_web#', label: 'Facebook' }
   ];
@@ -33,19 +35,19 @@ const Header = () => {
       <header className="w-full relative z-40">
         <div className="">
           {/* Desktop Header */}
-          <div className="flex items-center justify-around py-6 md:py-8">
+          <div className="flex items-center justify-around py-4 md:py-6">
             {/* Logo Section */}
             <div className="flex items-center flex-shrink-0">
               <img 
                 src="/logo.png" 
                 alt="Meta Tech Corps Logo" 
-                className="h-12 w-12 sm:h-16 sm:w-16 object-contain"
+                className="h-10 object-contain"
               />
               <div className="ml-3 sm:ml-6 flex items-center">
                 <h1 className="font-bold text-lg sm:text-xl lg:text-2xl text-white">
                   Meta Tech Corps
                 </h1>
-                <GoDotFill className="text-[#ff204d] ml-1 text-sm" />
+                <GoDotFill className="text-[#ff204d] ml-[0px] mt-2 text-sm" />
               </div>
             </div>
 
@@ -54,14 +56,14 @@ const Header = () => {
               <ul className="flex items-center space-x-8 font-bold text-lg xl:text-xl">
                 {navigationItems.map((item, index) => (
                   <li key={item.label}>
-                    <a
+                    <Link
                       href={item.href}
                       className={`transition-colors duration-200 hover:text-[#ff204d] ${
                         index === 0 ? 'text-[#ff204d]' : 'text-white'
                       }`}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -114,23 +116,24 @@ const Header = () => {
         />
         
         {/* Mobile Menu Panel */}
-        <div className={`absolute top-0 left-0 h-full w-full  bg-[#c71539] transform transition-transform duration-300 ease-in-out ${
+        <div className={`absolute top-0 left-0 h-full w-full bg-[#c71539] transform transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
         } overflow-y-auto`}>
           {/* Menu Header */}
           <div className="flex items-center justify-between p-6 border-b border-red-400">
-            {/* <div className="flex items-center">
+            <div className="flex items-center">
               <img 
                 src="/logo.png" 
                 alt="Meta Tech Corps Logo" 
                 className="h-10 w-10 object-contain"
-              />*/}
+              />
               <div className="ml-3 flex items-center">
                 <h2 className="font-bold text-lg text-white">
                   Meta Tech Corps
                 </h2>
                 <GoDotFill className="text-white ml-1 text-sm" />
               </div>
+            </div>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               className="p-2 rounded-md text-white hover:bg-red-600 transition-colors duration-200"
@@ -145,15 +148,15 @@ const Header = () => {
             <ul className="space-y-2">
               {navigationItems.map((item, index) => (
                 <li key={item.label}>
-                  <a
+                  <Link
                     href={item.href}
                     className={`block px-6 py-4 text-lg font-semibold transition-colors duration-200 hover:bg-red-600 ${
-                      index === 0 ? 'text-white ' : 'text-white'
+                      index === 0 ? 'text-white' : 'text-white'
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -187,3 +190,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

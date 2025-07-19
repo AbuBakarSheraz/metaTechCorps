@@ -36,7 +36,14 @@ const Footer = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span className="text-gray-300">sales.digimarkxperts@gmail.com</span>
+                <a 
+                  href="https://mail.google.com/mail/?view=cm&to=sales.digimarkxperts@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 text-lg hover:text-mtc-red transition-colors duration-300 hover:underline"
+                >                 
+                   sales.digimarkxperts@gmail.com
+                </a>
               </div>
             </div>
           </div>

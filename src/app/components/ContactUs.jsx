@@ -74,37 +74,50 @@ const ContactUs = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             {/* Phone */}
-            <div className=" rounded-2xl p-8 border border-gray-800 hover:border-mtc-red transition-colors duration-300">
+<div className=" rounded-2xl p-8 border border-gray-800 hover:border-mtc-red transition-colors duration-300">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-mtc-red bg-opacity-20 p-3 rounded-xl">
+                <div className=" bg-opacity-20 p-3 rounded-xl">
                   <Phone className="w-6 h-6 text-mtc-red" />
                 </div>
                 <h3 className="text-xl font-semibold">Phone Number</h3>
               </div>
-              <p className="text-gray-300 text-lg">(309) 8855-314</p>
+              <a 
+                href="tel:+19452060214" 
+                className="text-gray-300 text-lg hover:text-mtc-red transition-colors duration-300 hover:underline"
+              >
+                +1 (945) 206-0214
+              </a>
             </div>
 
             {/* Email */}
             <div className=" rounded-2xl p-8 border border-gray-800 hover:border-mtc-red transition-colors duration-300">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-mtc-red bg-opacity-20 p-3 rounded-xl">
+                <div className=" bg-opacity-20 p-3 rounded-xl">
                   <Mail className="w-6 h-6 text-mtc-red" />
                 </div>
                 <h3 className="text-xl font-semibold">Email Address</h3>
               </div>
-              <p className="text-gray-300 text-lg">info@domainname.com</p>
+<a 
+  href="https://mail.google.com/mail/?view=cm&to=sales.digimarkxperts@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-300 text-lg hover:text-mtc-red transition-colors duration-300 hover:underline"
+>
+  sales.digimarkxperts@gmail.com
+</a>
+
             </div>
 
             {/* Address */}
             <div className=" rounded-2xl p-8 border border-gray-800 hover:border-mtc-red transition-colors duration-300">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="bg-mtc-red bg-opacity-20 p-3 rounded-xl">
+                <div className=" bg-opacity-20 p-3 rounded-xl">
                   <MapPin className="w-6 h-6 text-mtc-red" />
                 </div>
                 <h3 className="text-xl font-semibold">Address</h3>
               </div>
               <p className="text-gray-300 text-lg">
-                123 Creative Lane London, SW1A 1AA United Kingdom
+                1942 Broadway ste 314C Boulder CO 80302 US.
               </p>
             </div>
           </div>
