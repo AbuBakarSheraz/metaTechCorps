@@ -29,7 +29,7 @@ export default function DynamicPage() {
       }}
     >
       <Header />
-      <hr class="h-[0.5px] bg-gray-300 border-0" />
+      <hr class="h-[0.5px] bg-blend-darken border-0" />
       <div className='h-[45vh] w-full flex flex-col items-center justify-center'>
       <h1 className="text-white text-3xl font-bold capitalize">
         {slug?.replace('-', ' ')}
