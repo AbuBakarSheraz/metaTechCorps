@@ -74,7 +74,7 @@ export default function Home() {
     <>
       <Herosection />
       <Slider/>
-      <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800">
+      <div className="bg-blend-darken">
         <Aboutagency />
         <Services />
         <DigitalSuccessComponent />
