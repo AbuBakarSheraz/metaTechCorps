@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaStarOfLife, FaRegCircleDot } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import Image from 'next/image';
+import Link from 'next/link';
 import icon1 from '../assets/icons/icon1.svg';
 import icon2 from '../assets/icons/icon2.svg';
 import icon3 from '../assets/icons/icon3.svg';
@@ -50,17 +51,19 @@ function Aboutagency() {
             </h1>
 
             <div className="flex items-center space-x-[-12px]">
-              <button
-                onClick={handleClick}
+              <Link
+                // onClick={handleClick}
+                href='/contact-us'
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 className="bg-gray-600 hover:bg-gray-500 text-white px-8 py-4 rounded-lg font-semibold text-sm z-10 transition-all duration-300"
               >
                 Contact Us
-              </button>
+              </Link>
 
-              <button
-                onClick={handleClick}
+              <div
+                // onClick={handleClick}
+                href='/contact-us'
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 className="bg-mtc-red hover:bg-[#a01230] w-12 h-12 z-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
@@ -68,7 +71,7 @@ function Aboutagency() {
                 <FiArrowUpRight
                   className={`text-white text-xl z-20 transform transition-transform duration-500 ${isHovered ? "rotate-45 scale-110" : "rotate-0"}`}
                 />
-              </button>
+              </div>
             </div>
           </div>
         </div>

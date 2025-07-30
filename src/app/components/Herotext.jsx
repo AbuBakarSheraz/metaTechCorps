@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { MdOutlinePlayCircleFilled } from "react-icons/md";
 import { FiArrowUpRight } from "react-icons/fi";
+// import { Link } from 'lucide-react';
+import Link from 'next/link';
+
 
 function Herotext() {
   const [currentService, setCurrentService] = useState(0);
@@ -106,9 +109,11 @@ function Herotext() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-gray-600  text-white px-8 py-4 my-20 rounded-full transition-all duration-300 flex items-center justify-center gap-2 group">
+          <Link
+          href='/contact-us'
+          className="bg-gray-600  text-white px-8 py-4 my-20 rounded-full transition-all duration-300 flex items-center justify-center gap-2 group">
             Get In Touch
-          </button>
+          </Link>
           {/* <button className="bg-[#c71539] hover:bg-[#a01230] text-white px-6 py-4 rounded-full transition-all duration-300 flex items-center justify-center group">
             <FiArrowUpRight className="text-xl group-hover:rotate-45 transition-transform duration-300" />
           </button> */}

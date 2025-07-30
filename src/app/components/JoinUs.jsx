@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Facebook, Linkedin, Instagram } from 'lucide-react';
+import Link from 'next/link';
+
 
 const JoinUs = () => {
   return (
@@ -61,7 +63,10 @@ const JoinUs = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-white mb-1">Follow Us On Facebook</h3>
-                    <p className="text-gray-400">@MTC</p>
+                    <a
+                    href='https://web.facebook.com/metatechcorpsss/?ref=pl_edit_xav_ig_profile_page_web#'
+                    target='_blank'
+                    className="text-gray-400">@MTC</a>
                   </div>
                   <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-mtc-red transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </div>
@@ -75,7 +80,10 @@ const JoinUs = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-white mb-1">Join Us On LinkedIn</h3>
-                    <p className="text-gray-400">user.artistic_official</p>
+                    <a
+                     href='https://www.linkedin.com/company/metatechcorps/'
+                     target='_blank'
+                     className="text-gray-400">Meta Tech Corps</a>
                   </div>
                   <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-red-400 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </div>
@@ -89,7 +97,10 @@ const JoinUs = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-white mb-1">Follow On Instagram</h3>
-                    <p className="text-gray-400">@artistic_insta_official</p>
+                    <a
+                    href='https://www.instagram.com/metatechcorps/'
+                    target='_blank'
+                     className="text-gray-400">@metatechcorps</a>
                   </div>
                   <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-red-400 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </div>

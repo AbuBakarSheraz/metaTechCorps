@@ -53,7 +53,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Quick Link</h3>
             <ul className="space-y-3">
               <li><Link href="/" className="text-gray-300 hover:text-mtc-red transition-colors">Home</Link></li>
-              <li><Link href="/about" className="text-gray-300 hover:text-mtc-red transition-colors">About Us</Link></li>
+              <li><Link href="/about-us" className="text-gray-300 hover:text-mtc-red transition-colors">About Us</Link></li>
               <li><Link href="/services" className="text-gray-300 hover:text-mtc-red transition-colors">Services</Link></li>
               <li><Link href="/blog" className="text-gray-300 hover:text-mtc-red transition-colors">Blog</Link></li>
             </ul>
@@ -63,7 +63,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Support</h3>
             <ul className="space-y-3">
-              <li><Link href="/contact" className="text-gray-300 hover:text-mtc-red transition-colors">Contact us</Link></li>
+              <li><Link href="/contact-s" className="text-gray-300 hover:text-mtc-red transition-colors">Contact us</Link></li>
               <li><Link href="/terms" className="text-gray-300 hover:text-mtc-red transition-colors">Terms & Conditions</Link></li>
               <li><Link href="/career" className="text-gray-300 hover:text-mtc-red transition-colors">Career</Link></li>
               <li><Link href="/help" className="text-gray-300 hover:text-mtc-red transition-colors">Help</Link></li>

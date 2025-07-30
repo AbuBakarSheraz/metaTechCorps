@@ -1,4 +1,7 @@
+// import { Lin } from 'lucide-react';
 import React from 'react';
+import Link from 'next/link';
+
 
 export default function Lwt() {
   return (
@@ -28,7 +31,9 @@ export default function Lwt() {
               TOGETHER
               {/* Green Circle Button */}
               <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 md:-top-12 lg:-top-24">
-                <button className="bg-mtc-red hover:bg-red-800 transition-colors duration-300 rounded-full w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 flex items-center justify-center group">
+                <Link 
+                href='/contact-us'
+                className="bg-mtc-red hover:bg-red-800 transition-colors duration-300 rounded-full w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 flex items-center justify-center group">
                   <div className="text-center">
                     <div className="text-black font-bold text-xs md:text-sm lg:text-base mb-1">
                       Get In Touch
@@ -39,7 +44,7 @@ export default function Lwt() {
                       </svg>
                     </div>
                   </div>
-                </button>
+                </Link>
               </div>
             </div>
           </div>

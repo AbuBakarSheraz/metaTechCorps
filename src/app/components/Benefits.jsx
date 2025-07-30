@@ -62,7 +62,7 @@ function Benefits() {
 
             <div>
             <h1 className='text-4xl md:text-4xl lg:text-5xl lg:w-[700px] xl:text-5xl text-white leading-tight'>
-              Discover the <strong className='font-bold text-mtc-red'>enefits</strong> of choosing us today
+              Discover the <strong className='font-bold text-mtc-red'>Benefits</strong> of choosing us today
             </h1>
             </div>
 
@@ -80,7 +80,7 @@ function Benefits() {
           {services.map((service) => (
             <div 
               key={service.id}
-              onClick={handleClick}
+              // onClick={handleClick}
               onMouseEnter={() => setHoveredCard(service.id)}
               onMouseLeave={() => setHoveredCard(null)} 
               className="border border-gray-500 bg-black rounded-4xl p-10 transition-all duration-300 relative overflow-hidden"

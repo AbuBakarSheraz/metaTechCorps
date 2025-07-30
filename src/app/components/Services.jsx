@@ -4,6 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { FaStarOfLife, FaRegCircleDot } from "react-icons/fa6";
 import { SlDiamond } from "react-icons/sl";
 import diamond from '../assets/icons/diamond.svg';
+import Link from 'next/link';
 import circles from '../assets/icons/circles.svg';
 import graph from '../assets/icons/graph.svg';
 import Image from 'next/image';
@@ -66,17 +67,19 @@ function Services() {
             </p>
 
             <div className="flex items-center mt-6 space-x-[-12px]">
-              <button
-                onClick={handleClick}
+              <Link
+                // onClick={handleClick}
+                href='/services'
                 onMouseEnter={() => setButtonHovered(true)}
                 onMouseLeave={() => setButtonHovered(false)}
                 className="bg-gray-600 hover:bg-gray-500 text-white px-8 py-4 rounded-3xl font-semibold text-sm z-10 transition-all duration-300"
               >
                 All Services
-              </button>
+              </Link>
 
-              <button
-                onClick={handleClick}
+              <Link
+                // onClick={handleClick}
+                href='/services'
                 onMouseEnter={() => setButtonHovered(true)}
                 onMouseLeave={() => setButtonHovered(false)}
                 className="bg-mtc-red hover:bg-[#a01230] w-12 h-12 ml-3 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
@@ -84,7 +87,7 @@ function Services() {
                 <FiArrowUpRight
                   className={`text-white text-xl transform transition-transform duration-500 ${buttonHovered ? "rotate-45 scale-110" : "rotate-0"}`}
                 />
-              </button>
+              </Link>
             </div>
            </div> 
            </div>
@@ -94,7 +97,7 @@ function Services() {
           {services.map((service) => (
             <div 
               key={service.id}
-              onClick={handleClick}
+              // onClick={handleClick}
               onMouseEnter={() => setHoveredCard(service.id)}
               onMouseLeave={() => setHoveredCard(null)} 
               className="border border-gray-500 bg-black rounded-4xl p-10 transition-all duration-300 relative overflow-hidden"
