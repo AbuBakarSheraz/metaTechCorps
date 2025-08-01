@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import emailjs from 'emailjs-com';
+
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -10,40 +12,60 @@ const ContactUs = () => {
     email: '',
     message: ''
   });
+  const handleInputChange = (e) => {
+  const { name, value } = e.target;
+  setFormData((prevData) => ({
+    ...prevData,
+    [name]: value,
+  }));
+};
+
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  const templateParamsClient = {
+    from_name: `${formData.firstName} ${formData.lastName}`,
+    to_email: formData.email,
+    phone: formData.phone,
+    message: formData.message,
   };
 
-  const handleSubmit = async (e) => {
-    setIsSubmitting(true);
-    setSubmitStatus('');
+  const templateParamsCompany = {
+    from_name: `${formData.firstName} ${formData.lastName}`,
+    from_email: formData.email,
+    to_email: 'digimarkxperts1@gmail.com',
+    phone: formData.phone,
+    message: formData.message,
+  };
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+  try {
+    await Promise.all([
+      emailjs.send('service_bvvh7fn', 'template_755sbnv', templateParamsClient, 'zHUz7k7Nc1hZ21jsX'),
+      emailjs.send('service_bvvh7fn', 'template_8v4mm1o', templateParamsCompany, 'zHUz7k7Nc1hZ21jsX'),
+    ]);
     setSubmitStatus('success');
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
+  } catch (error) {
+    console.error('FAILED TO SEND ONE OR BOTH EMAILS:', error);
+    alert('Something went wrong while sending the emails.');
+  } finally {
     setIsSubmitting(false);
-    
-    // Reset form after successful submission
-    setTimeout(() => {
-      setFormData({
-        firstName: '',
-        lastName: '',
-        phone: '',
-        email: '',
-        message: ''
-      });
-      setSubmitStatus('');
-    }, 3000);
-  };
+  }
+};
+
+
 
   return (
     <div className="min-h-screen  text-white relative overflow-hidden">
@@ -123,6 +145,7 @@ const ContactUs = () => {
           </div>
 
           {/* Contact Form */}
+          <form onSubmit={handleSubmit}>
           <div className=" rounded-2xl p-8 border border-gray-800">
             <div className="space-y-6">
               {/* Name Fields */}
@@ -192,8 +215,7 @@ const ContactUs = () => {
 
               {/* Submit Button */}
               <button
-                type="button"
-                onClick={handleSubmit}
+                type="submit"
                 disabled={isSubmitting}
                 className="w-full bg-mtc-red hover:bg-red-600 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
@@ -220,6 +242,7 @@ const ContactUs = () => {
               )}
             </div>
           </div>
+        </form>
         </div>
       </div>
     </div>
