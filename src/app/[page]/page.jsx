@@ -15,7 +15,7 @@ import JoinUs from "../components/JoinUs";
 import Footer from "../components/Footer";
 const LoadingScreen = () => {
   return (
-    <div className="fixed inset-0 bg-blend-darken flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black flex items-center justify-center z-50">
       <div className="relative">
         {/* Rotating circular loader */}
         <div className="absolute inset-0 w-32 h-32 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin"></div>
@@ -72,7 +72,7 @@ export default function DynamicPage() {
       <Header />
       <hr className="h-[0.5px] bg-black border-0" />
       <div className='h-[45vh] w-full flex flex-col items-center justify-center'>
-      <h1 className="text-white text-3xl font-bold capitalize">
+      <h1 className="text-white text-5xl font-bold capitalize">
         {slug?.replace('-', ' ')}
       </h1>
       <h2>Home * <span className='text-mtc-red'>{slug?.replace('-', ' ')}</span></h2>
