@@ -16,11 +16,11 @@ import Footer from "./components/Footer";
 // Loading Screen Component
 const LoadingScreen = () => {
   return (
-    <div className="fixed inset-0 bg-blend-darken flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-white flex items-center justify-center z-50">
       <div className="relative">
         {/* Rotating circular loader */}
         <div className="absolute inset-0 w-32 h-32 border-4 border-gray-200 border-t-red-600 rounded-full animate-spin"></div>
-        
+
         {/* Logo in the center */}
         <div className="w-32 h-32 flex items-center justify-center">
           <img 
@@ -38,43 +38,30 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Method 1: Simple timer (2-3 seconds)
-    const timer = setTimeout(() => {
+    const handleLoad = () => {
       setIsLoading(false);
-    }, 2500);
+    };
 
-    return () => clearTimeout(timer);
+    // If page already loaded (in case useEffect runs after window.onload)
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    // Cleanup
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
 
-  // Alternative useEffect for more realistic loading
-  // useEffect(() => {
-  //   // Method 2: Wait for page load + window load events
-  //   const handleLoad = () => {
-  //     // Add a small delay to ensure smooth transition
-  //     setTimeout(() => {
-  //       setIsLoading(false);
-  //     }, 500);
-  //   };
-
-  //   if (document.readyState === 'complete') {
-  //     handleLoad();
-  //   } else {
-  //     window.addEventListener('load', handleLoad);
-  //     return () => window.removeEventListener('load', handleLoad);
-  //   }
-  // }, []);
-
-  // Show loading screen while loading
   if (isLoading) {
     return <LoadingScreen />;
   }
 
-  // Show main content after loading
   return (
     <>
       <Herosection />
-      <Slider/>
-      <div className="bg-blend-darken">
+      <Slider />
+      <div className="bg-black">
         <Aboutagency />
         <Services />
         <DigitalSuccessComponent />
@@ -84,7 +71,7 @@ export default function Home() {
         <Lwt />
         <ContactUs />
         <Footer />
-      </div>  
+      </div>
     </>
   );
 }

@@ -69,7 +69,7 @@ function Herotext() {
         </div>
 
         {/* Description and Controls */}
-        <div className="flex flex-col lg:flex-row items-center justify-around gap-8 px-4 mt-12">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-4 mt-12 mx-28">
           {/* Play Button with Rotating Text */}
           <div className="relative flex-shrink-0">
             <div className="relative w-32 h-32">
@@ -100,8 +100,8 @@ function Herotext() {
           </div>
 
           {/* Description Text */}
-          <div className="flex-1 max-w-lg">
-            <p className="text-gray-300 text-lg leading-relaxed">
+          <div className="flex-1 max-w-4xl">
+            <p className="text-gray-300 md:ml-22 text-left text-lg leading-relaxed">
               At our Creative Digital Agency, we bring your ideas to life by crafting engaging, impactful digital experiences that captivate audiences and drive results. From innovative web design to compelling content and cutting-edge digital strategies.
             </p>
           </div>
