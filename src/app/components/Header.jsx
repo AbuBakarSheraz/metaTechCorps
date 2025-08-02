@@ -81,12 +81,12 @@ const Header = () => {
                   <Icon />
                 </a>
               ))}
-              <button
+              {/* <button
                 aria-label="Menu"
                 className="text-white text-xl lg:text-2xl hover:text-gray-300 transition-colors duration-200"
               >
                 <TbGridDots />
-              </button>
+              </button> */}
             </div>
 
             {/* Mobile Menu Button */}
