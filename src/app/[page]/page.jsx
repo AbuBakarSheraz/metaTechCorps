@@ -13,6 +13,7 @@ import ChooseUs from "../components/ChooseUs";
 import Benefits from "../components/Benefits";
 import JoinUs from "../components/JoinUs";
 import Footer from "../components/Footer";
+import Portfolio from '../sections/Portfolio';
 const LoadingScreen = () => {
   return (
     <div className="fixed inset-0 bg-black flex items-center justify-center z-50">
@@ -36,6 +37,8 @@ const LoadingScreen = () => {
 export default function DynamicPage() {
   const params = useParams();
   const slug = params.page;
+
+
  const [isLoading, setIsLoading] = useState(true);
  
    useEffect(() => {
@@ -50,14 +53,14 @@ export default function DynamicPage() {
        window.addEventListener("load", handleLoad);
      }
  
-     // Cleanup
+    
      return () => window.removeEventListener("load", handleLoad);
    }, []);
  
    if (isLoading) {
      return <LoadingScreen />;
    }
-
+  if(slug != 'portfolio') 
   return (
     <>
     <div
@@ -78,6 +81,7 @@ export default function DynamicPage() {
       <h2>Home * <span className='text-mtc-red'>{slug?.replace('-', ' ')}</span></h2>
       </div>
     </div>
+
     <Slider/>
     <ContactUs />
     <Aboutagency />
@@ -90,5 +94,13 @@ export default function DynamicPage() {
     <Footer />
 
     </>
+  );
+  if(slug == 'portfolio')
+    return(
+  <>
+  <Portfolio />
+  </>
+
+
   );
 }

@@ -21,7 +21,8 @@ const Header = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about-us' },
     { label: 'Services', href: '/services' },
-    { label: 'Contact Us', href: '/contact-us' }
+    { label: 'Contact Us', href: '/contact-us' },
+    { label: 'Portfolio', href: '/portfolio' }
   ];
 
   const socialLinks = [
