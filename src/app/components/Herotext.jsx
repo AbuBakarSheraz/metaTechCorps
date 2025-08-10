@@ -69,7 +69,7 @@ function Herotext() {
         </div>
 
         {/* Description and Controls */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-4 mt-12 mx-28">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 px-4 mt-12">
           {/* Play Button with Rotating Text */}
           <div className="relative flex-shrink-0">
             <div className="relative w-32 h-32">
