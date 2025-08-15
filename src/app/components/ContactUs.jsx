@@ -125,7 +125,7 @@ const handleSubmit = async (e) => {
   rel="noopener noreferrer"
   className="text-gray-300 text-lg hover:text-mtc-red transition-colors duration-300 hover:underline"
 >
-  sales.digimarkxperts@gmail.com
+  sales@metatechcorps.com
 </a>
 
             </div>

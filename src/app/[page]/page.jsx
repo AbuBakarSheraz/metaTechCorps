@@ -60,7 +60,7 @@ export default function DynamicPage() {
    if (isLoading) {
      return <LoadingScreen />;
    }
-  if(slug != 'portfolio') 
+  if(slug == 'contact-us') 
   return (
     <>
     <div
@@ -101,6 +101,76 @@ export default function DynamicPage() {
   <Portfolio />
   </>
 
+
+  );
+  if(slug == 'about-us')
+    return(
+  <>
+   <div
+      className=""
+      style={{
+        backgroundImage: `url(${bgimg.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '400px',
+      }}
+    >
+      <Header />
+      <hr className="h-[0.5px] bg-black border-0" />
+      <div className='h-[45vh] w-full flex flex-col items-center justify-center'>
+      <h1 className="text-white text-5xl font-bold capitalize">
+        {slug?.replace('-', ' ')}
+      </h1>
+      <h2>Home * <span className='text-mtc-red'>{slug?.replace('-', ' ')}</span></h2>
+      </div>
+    </div>
+
+    <Slider/>
+    <Aboutagency />
+    <ContactUs />
+    <Services />
+    <DigitalSuccessComponent />
+    <ChooseUs />
+    <Benefits />
+    <JoinUs />
+    <Lwt />
+    <Footer />
+  </>
+
+  );
+    if(slug == 'services')
+    return(
+  <>
+   <div
+      className=""
+      style={{
+        backgroundImage: `url(${bgimg.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '400px',
+      }}
+    >
+      <Header />
+      <hr className="h-[0.5px] bg-black border-0" />
+      <div className='h-[45vh] w-full flex flex-col items-center justify-center'>
+      <h1 className="text-white text-5xl font-bold capitalize">
+        {slug?.replace('-', ' ')}
+      </h1>
+      <h2>Home * <span className='text-mtc-red'>{slug?.replace('-', ' ')}</span></h2>
+      </div>
+    </div>
+
+    <Slider/>
+    <Services />
+    <ContactUs />
+    <Aboutagency />
+    <DigitalSuccessComponent />
+    <ChooseUs />
+    <Benefits />
+    <JoinUs />
+    <Lwt />
+    <Footer />
+  </>
 
   );
 }

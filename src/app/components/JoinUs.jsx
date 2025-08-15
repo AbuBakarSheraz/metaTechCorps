@@ -56,51 +56,51 @@ const JoinUs = () => {
             {/* Social Media Links */}
             <div className="space-y-8">
               {/* Twitter */}
-              <div className="group">
-                <div className="flex items-center space-x-6 p-6 rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-mtc-red transition-all duration-300 hover:transform hover:scale-105">
-                  <div className="w-14 h-14 bg-mtc-red rounded-full flex items-center justify-center group-hover:bg-mtc-red transition-colors duration-300">
-                    <Facebook className="w-7 h-7 text-black" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-white mb-1">Follow Us On Facebook</h3>
-                    <a
-                    href='https://web.facebook.com/metatechcorpsss/?ref=pl_edit_xav_ig_profile_page_web#'
-                    target='_blank'
-                    className="text-gray-400">@MTC</a>
-                  </div>
-                  <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-mtc-red transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
-                </div>
-              </div>
+             <div
+  className="group"
+  onClick={() => window.open('https://web.facebook.com/metatechcorpsss/?ref=pl_edit_xav_ig_profile_page_web#', '_blank')}
+>
+  <div className="flex items-center space-x-6 p-6 rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-mtc-red transition-all duration-300 hover:transform hover:scale-105">
+    <div className="w-14 h-14 bg-mtc-red rounded-full flex items-center justify-center group-hover:bg-mtc-red transition-colors duration-300">
+      <Facebook className="w-7 h-7 text-black" />
+    </div>
+    <div className="flex-1">
+      <h3 className="text-lg font-semibold text-white mb-1">Follow Us On Facebook</h3>
+      <p>@MTC</p>
+    </div>
+    <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-mtc-red transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+  </div>
+</div>
+
               
               {/* LinkedIn */}
-              <div className="group">
+              <div 
+              className="group"
+              onClick={() => window.open('https://www.linkedin.com/company/metatechcorps/')}
+>
                 <div className="flex items-center space-x-6 p-6 rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-red-500/50 transition-all duration-300 hover:transform hover:scale-105">
                   <div className="w-14 h-14 bg-mtc-red rounded-full flex items-center justify-center group-hover:bg-mtc-red transition-colors duration-300">
                     <Linkedin className="w-7 h-7 text-black bg-mtc-red" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-white mb-1">Join Us On LinkedIn</h3>
-                    <a
-                     href='https://www.linkedin.com/company/metatechcorps/'
-                     target='_blank'
-                     className="text-gray-400">Meta Tech Corps</a>
+                    <p>Meta Tech Corps</p>
                   </div>
                   <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-red-400 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </div>
               </div>
               
               {/* Instagram */}
-              <div className="group">
+              <div 
+              className="group"
+              onClick={() => window.open('https://www.instagram.com/metatechcorps/')}>
                 <div className="flex items-center space-x-6 p-6 rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-red-500/50 transition-all duration-300 hover:transform hover:scale-105">
                   <div className="w-14 h-14 bg-mtc-red rounded-full flex items-center justify-center group-hover:bg-mtc-red transition-colors duration-300">
                     <Instagram className="w-7 h-7 text-black" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-white mb-1">Follow On Instagram</h3>
-                    <a
-                    href='https://www.instagram.com/metatechcorps/'
-                    target='_blank'
-                     className="text-gray-400">@metatechcorps</a>
+                    <p>@metatechcorps</p>
                   </div>
                   <ArrowUpRight className="w-6 h-6 text-gray-400 group-hover:text-red-400 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </div>

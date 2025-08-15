@@ -42,7 +42,8 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-300 text-lg hover:text-mtc-red transition-colors duration-300 hover:underline"
                 >                 
-                   sales.digimarkxperts@gmail.com
+                   sales@metatechcorps.com
+
                 </a>
               </div>
             </div>
@@ -72,7 +73,7 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Subscribe Our Newsletter</h3>
+            {/* <h3 className="text-lg font-semibold mb-6">Subscribe Our Newsletter</h3>
             <div className="flex">
               <input
                 type="email"
@@ -82,7 +83,7 @@ const Footer = () => {
               <button className="bg-mtc-red text-black px-6 py-3 rounded-r-md font-medium hover:bg-opacity-90 transition-colors">
                 Subscribe
               </button>
-            </div>
+            </div> */}
             
             {/* Social Media Icons */}
             <div className="flex space-x-3 mt-6">
