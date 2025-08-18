@@ -83,7 +83,10 @@ const P6 = () => {
 
             {/* CTA Link */}
             <div className="flex justify-end">
-              <button className="text-white text-sm hover:text-gray-300 transition-colors duration-300 underline">
+
+              <button 
+              onClick={() => {window.open('https://www.instagram.com/shimaamedicalspa/')}}
+              className="font-bold cursor-pointer  text-white text-sm hover:text-gray-300 transition-colors duration-300 underline">
                 Click Here
               </button>
             </div>

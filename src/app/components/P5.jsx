@@ -90,7 +90,9 @@ function OptionsBeautyShowcase() {
 
               {/* Enhanced CTA Button */}
               <div className="mb-6 sm:mb-8">
-                <button className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-500 font-medium text-sm sm:text-base rounded-md overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                <button
+                onClick={() => {window.open('https://options-beauty.co.uk/')}}
+                className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-500 font-medium text-sm sm:text-base rounded-md overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
                   <span className="relative z-10">Visit Website</span>
                   <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 </button>
