@@ -20,8 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
+    <h lang="en" suppressHydrationWarning>
+      <b
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
               `}
             </Script>
 
-            <noscript>
+            <no>
               <img
                 height="1"
                 width="1"
@@ -75,10 +75,3 @@ export default function RootLayout({ children }) {
                 src="https://www.facebook.com/tr?id=1080603874278809&ev=PageView&noscript=1"
                 alt="fb-pixel"
               />
-            </noscript>
-          </>
-        )}
-      </body>
-    </html>
-  );
-}
