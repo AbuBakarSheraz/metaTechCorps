@@ -46,7 +46,7 @@ function Aboutagency() {
               <p className='tracking-wide'>ABOUT AGENCY</p>
             </div>
 
-            <h1 className='text-3xl md:text-2xl lg:text-4xl xl:text-5xl text-white leading-tight mb-8'>
+            <h1 className='text-3xl md:text-2xl lg:text-4xl xl:text-5xl text-white leading-tight mb-8 font-semibold'>
               Crafting <strong className='font-bold text-mtc-red'>unique digital</strong> experiences that elevate your brand
             </h1>
 
