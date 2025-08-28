@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,14 +25,14 @@ export const metadata = {
       className={`${geistSans.variable} ${geistMono.variable} antialiased`} suppressHydrationWarning
     >       
       {children}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1M6W3WDW6"></script>
-      <script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V1M6W3WDW6"></Script>
+      <Script>
     {    ` window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments)}
         gtag('js', new Date());
       
         gtag('config', 'G-V1M6W3WDW6');`}
-      </script>
+      </Script>
       <script>
   !function(f,b,e,v,n,t,s) (
   if(f.fbq) return;
@@ -57,14 +58,14 @@ export const metadata = {
   <img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1080603874278809&ev=PageView&noscript=1"/>
   </noscript>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1M6W3WDW6"></script>
-  <script>
+  <Script async src="https://www.googletagmanager.com/gtag/js?id=G-V1M6W3WDW6"></Script>
+  <Script>
 {  `window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)}
   gtag('js', new Date());
 
   gtag('config', 'G-V1M6W3WDW6');`}
-</script>
+</Script>
 
         
       </body>
