@@ -113,7 +113,7 @@ function Services() {
                   />
                 </div>
                 <div className='flex flex-col mt-14'>
-                  <h2 className='font-bold text-xl cursor-pointer'>{service.title}</h2>
+                  <h2 className='font-bold text-xl cursor-pointer text-white'>{service.title}</h2>
                   <p className="relative z-10 text-white text-[17px] cursor-pointer mt-3">
                     {service.description}
                   </p>

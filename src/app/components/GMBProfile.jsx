@@ -42,7 +42,7 @@ const GMBProfile = () => {
         <div className="absolute top-10 right-1/3 w-20 h-20 border border-gray-600 rounded-full"></div>
       </div>
       {/* Improved main heading with better positioning */}
-      <div className="absolute top-6 md:top-10 left-1/4 md:left-[400px] -translate-x-1/2 z-10 px-4">
+      <div className="absolute top-6 md:top-10 right-2 md:left-[300px] lg:left-[530px]  -translate-x-1/2 z-10 px-4">
         <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold leading-none select-none">
           <div
             className="text-transparent tracking-wider drop-shadow-2xl"
