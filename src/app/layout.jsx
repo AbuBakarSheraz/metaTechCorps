@@ -54,6 +54,14 @@ export default function RootLayout({ children }) {
   <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1080603874278809&ev=PageView&noscript=1"/>
 </noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V1M6W3WDW6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V1M6W3WDW6');
+</script>
 
         
       </head>
