@@ -1,5 +1,3 @@
-'use client'
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
@@ -63,21 +61,18 @@ export default function RootLayout({ children }) {
                   s.parentNode.insertBefore(t,s)
                 }(window, document,'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
-
                 fbq('init', '1080603874278809'); 
                 fbq('track', 'PageView');
               `}
             </Script>
 
-            <noscript>
-              <img
-                height="1"
-                width="1"
-                style={{ display: "none" }}
-                src="https://www.facebook.com/tr?id=1080603874278809&ev=PageView&noscript=1"
-                alt="fb-pixel"
-              />
-            </noscript>
+            <noscript
+              dangerouslySetInnerHTML={{
+                __html: `<img height="1" width="1" style="display:none"
+                  src="https://www.facebook.com/tr?id=1080603874278809&ev=PageView&noscript=1"
+                  alt="fb-pixel"/>`,
+              }}
+            />
           </>
         )}
       </body>
