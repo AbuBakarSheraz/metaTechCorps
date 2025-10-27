@@ -4,7 +4,7 @@ import img from '../assets/images/image2.jpg';
 
 export default function WhyChooseSection() {
   return (
-    <div className="min-h-screen  text-white relative overflow-hidden">
+    <div className=" text-white relative overflow-hidden">
       {/* Background pattern */}
        <div className="absolute inset-0 opacity-20">
          <div className="absolute top-20 left-20 w-72 h-72 bg-mtc-red rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div> 
@@ -20,12 +20,12 @@ export default function WhyChooseSection() {
           <div className="space-y-8">
             <div className="flex items-center gap-3">
               <div className="text-mtc-red text-2xl">✱</div>
-              <span className=" font-semibold text-lg tracking-wider uppercase">
-                WHY CHOOSE
+              <span className=" font-semibold text-lg md:text-5xl tracking-wider uppercase">
+                WHY CHOOSE US
               </span>
             </div>
             
-            <h1 className="text-4xl lg:text-6xl leading-tight">
+            <h1 className="text-3xl lg:text-6xl leading-tight">
               Expertise for <span className="text-mtc-red font-bold">your digital </span>
               growth journey
             </h1>

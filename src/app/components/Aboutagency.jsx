@@ -43,10 +43,10 @@ function Aboutagency() {
           <div className='max-w-2xl'>
             <div className='flex gap-3 font-semibold text-white mb-6'>
               <FaStarOfLife className='text-mtc-red mt-1' />
-              <p className='tracking-wide'>ABOUT AGENCY</p>
+              <p className='tracking-wide text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>ABOUT AGENCY</p>
             </div>
 
-            <h1 className='text-3xl md:text-2xl lg:text-4xl xl:text-5xl text-white leading-tight mb-8 font-semibold'>
+            <h1 className='text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white leading-tight mb-8 font-semibold'>
               Crafting <strong className='font-bold text-mtc-red'>unique digital</strong> experiences that elevate your brand
             </h1>
 

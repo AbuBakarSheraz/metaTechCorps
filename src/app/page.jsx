@@ -68,7 +68,7 @@ export default function Home() {
         <ChooseUs />
         <Benefits />
         <JoinUs />
-        <Lwt />
+        {/* <Lwt /> */}
         <ContactUs />
         <Footer />
       </div>

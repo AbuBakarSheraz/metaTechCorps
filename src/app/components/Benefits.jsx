@@ -44,7 +44,7 @@ function Benefits() {
   ];
 
   return (
-    <div className="relative mt-16">
+    <div className="relative">
       {/* Overlay */}
 <div className="absolute inset-0 opacity-20">
          <div className="absolute top-20 left-20 w-72 h-72 bg-mtc-red rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div> 
@@ -54,14 +54,14 @@ function Benefits() {
        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div className="relative z-20 px-3 ">
         <div className='px-8 lg:px-16 lg:py-0 '>
-            <div className='flex gap-3 font-semibold text-white  '>
+            <div className='flex gap-3 font-semibold text-white'>
               <FaStarOfLife className='text-mtc-red mt-13' />
-              <p className='tracking-wide mt-12'>KEY BENEFITS</p>
+              <p className='tracking-wide mt-12 text-lg md:text-4xl lg:text-5xl  xl:text-5xl'>KEY BENEFITS</p>
             </div>
             <div className='flex flex-col  md:flex-row md:gap-20 mt-6'>
 
             <div>
-            <h1 className='text-4xl md:text-4xl lg:text-5xl lg:w-[700px] xl:text-5xl text-white leading-tight'>
+            <h1 className='text-4xl md:text-3xl lg:text-5xl lg:w-[700px] xl:text-4xl text-white leading-tight'>
               Discover the <strong className='font-bold text-mtc-red'>Benefits</strong> of choosing us today
             </h1>
             </div>

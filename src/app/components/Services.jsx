@@ -51,7 +51,7 @@ function Services() {
         <div className='px-8 lg:px-16 lg:py-0 '>
             <div className='flex gap-3 font-semibold text-white  '>
               <FaStarOfLife className='text-mtc-red mt-13' />
-              <p className='tracking-wide mt-12'>OUR SERVICES</p>
+              <p className='tracking-wide mt-12 text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>OUR SERVICES</p>
             </div>
             <div className='flex flex-col  md:flex-row md:gap-20 mt-6'>
 
